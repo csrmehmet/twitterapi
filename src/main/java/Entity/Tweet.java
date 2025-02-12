@@ -18,7 +18,7 @@ public class Tweet {
     private Long id;
 
     @NotBlank(message = "Content cannot be blank")
-    @Column(nullable = false, length = 280)
+    @Column(nullable = false)
     private String content;
 
     @ManyToOne
