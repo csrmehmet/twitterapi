@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Table(name = "tweet_like") // Like databasede kullanılan bir terim oldugu için adını farklı verdim
 public class Like {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
