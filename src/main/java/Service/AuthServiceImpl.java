@@ -3,9 +3,10 @@ package Service;
 import Entity.User;
 import Repository.UserRepository;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
 
 import java.util.Optional;
-
+@Service
 public class AuthServiceImpl implements AuthService{
 
     private final UserRepository userRepository;

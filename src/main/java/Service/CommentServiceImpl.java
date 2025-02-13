@@ -4,9 +4,10 @@ import Entity.Comment;
 import Entity.Tweet;
 import Repository.CommentRepository;
 import Repository.TweetRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class CommentServiceImpl implements CommentService {
 
     private  final CommentRepository commentRepository;

@@ -6,7 +6,9 @@ import Entity.User;
 import Repository.RetweetRepository;
 import Repository.TweetRepository;
 import Repository.UserRepository;
+import org.springframework.stereotype.Service;
 
+@Service
 public class RetweetServiceImpl implements RetweetService{
 
     private final RetweetRepository retweetRepository;

@@ -2,9 +2,10 @@ package Service;
 
 import Entity.Tweet;
 import Repository.TweetRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class TweetServiceImpl implements TweetService{
 
     private final TweetRepository tweetRepository;
@@ -33,7 +34,7 @@ public class TweetServiceImpl implements TweetService{
     }
 
     @Override
-    public Tweet updateTweet(Long tweetId, Tweet tweet, Long userId) {
+    public Tweet updateTweet(Long tweetId, Tweet tweet) {
         Tweet existTweet = tweetRepository.findById(tweetId).orElseThrow(()->
                 new RuntimeException("Tweet not found")) ;
         existTweet.setContent(tweet.getContent());

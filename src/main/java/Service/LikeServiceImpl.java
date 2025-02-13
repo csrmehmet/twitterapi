@@ -6,7 +6,9 @@ import Entity.User;
 import Repository.LikeRepository;
 import Repository.TweetRepository;
 import Repository.UserRepository;
+import org.springframework.stereotype.Service;
 
+@Service
 public class LikeServiceImpl implements LikeService{
 
     private final LikeRepository likeRepository;
